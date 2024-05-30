@@ -1,0 +1,26 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8593a6;
+}
+
+.container {
+  margin: 32px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  background-color: #d9a0ab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 630px) {
+  .container {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+  }
+}

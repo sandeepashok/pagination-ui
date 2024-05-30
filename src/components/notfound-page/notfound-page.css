@@ -1,0 +1,24 @@
+.notFound-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #8593a662;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notFound-image {
+  width: 300px;
+  height: 200px;
+}
+.message {
+  margin: 16px;
+  color: #024059;
+  font-size: 24px;
+}
+
+@media (max-width: 900) {
+  .notFound-image {
+    width: 300px;
+  }
+}

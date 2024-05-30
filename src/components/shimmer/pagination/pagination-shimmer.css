@@ -1,0 +1,59 @@
+.pagination-shimmer-container {
+  display: flex;
+}
+
+.pagination-shimmer-btn {
+  all: unset;
+  color: white;
+  background-color: #a1c2ff;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+  margin: 0 8px 40px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.shimmer {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  animation: shimmer 1s linear infinite;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #f5f7f825 25%,
+    transparent 50%
+  );
+  background-size: 200% 100%;
+}
+
+@media (max-width: 475px) {
+  .pagination-btn {
+    height: 30px;
+    width: 30px;
+    margin: 0 4px 40px 4px;
+  }
+}
+
+@media (max-width: 375px) {
+  .pagination-shimmer-container {
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    flex-wrap: wrap;
+  }
+}
